@@ -992,7 +992,19 @@ class cfgWeapons
 						ace_hearing_protection = 0.75;
 				        ace_hearing_lowerVolume = 0;
 					};//Boomer OD Helmet
-
+					class VSM_Bowman_cap_Black;
+					class ROG_H_Boomer_cap : VSM_Bowman_cap_Black
+					{
+						scope = 2;
+						scopecurator = 2;
+						scopearsenal = 2;
+						displayName="@[ROG]Boomer Bowman Cap";
+						hiddenSelectionsTextures[] = 
+						{
+						"\VSM_Bowman\data\Bowman_Base_co.paa",
+						"ROG_Gear\textures\CustomHelmets\Boomer\ROG_Bowman_Black_Boomer.paa"
+						};
+					}
 
 	class ROG_H_Chaos : Alpine_opscore
 	{

@@ -17,7 +17,8 @@ class CfgPatches
 		"ROG_m1151_m2_v2_Timon",
 		"ROG_m1151_m2_lras3_v1",
 		"ROG_m1151_m2_lras3_v1_Simba",
-		"ROG_bmp2d_grey"
+		"ROG_bmp2d_grey",
+		"ROG_pandurII_grey"
 		};
 		weapons[]={};
 		magazines[] = {};
@@ -63,13 +64,38 @@ class CfgVehicles
 	class rhsusf_CGRCAT1A2_usmc_d;//CAT Unarmed
 	class rhsusf_CGRCAT1A2_M2_usmc_d;//CAT M2
 	class rhsgref_ins_bmp2d;//BMP-2D MSV
+	class I_APC_Wheeled_03_cannon_F;//Pandur II (AAF)
+
+	class ROG_pandurII_grey : I_APC_Wheeled_03_cannon_F{
+		editorCategory="ROG";
+		editorSubcategory="IFV";
+		scope = public;
+		side = 1;	
+		displayName = "[Minotaur] Pandur II (ROG)(Big Chungus)";
+		author = "Kieranator-5050";
+
+		flareVelocity = 100;
+		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
+		memoryPointCM[] = {"flare_launcher1","flare_launcher2"};
+		memoryPointCMDir[] = {"flare_launcher1_dir","flare_launcher2_dir"};
+		weapons[] = {"CMFlareLauncher"};
+
+		hiddenSelectionsTextures[]=
+		{
+			"ROG_Vics\textures\pandurII\apc_wheeled_03_ext_co.paa",
+			"ROG_Vics\textures\pandurII\apc_wheeled_03_ext2_co.paa",
+			"ROG_Vics\textures\pandurII\rcws30_co.paa",
+			"ROG_Vics\textures\pandurII\apc_wheeled_03_ext_alpha_co.paa"
+		};
+
+	}
 	
 	class ROG_bmp2d_grey : rhsgref_ins_bmp2d{ //BMP-2D
 		editorCategory="ROG";
 		editorSubcategory="IFV";
 		scope = public;
 		side = 1;	
-		displayName = "[Minotaur]M1117(ROG)(Big Chungus)";
+		displayName = "[Minotaur]BMP2D(ROG)(Big Chungus)";
 		author = "Kieranator-5050";
 			
 		hiddenSelectionsTextures[] = {
